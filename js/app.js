@@ -428,36 +428,45 @@ function initLetter(){
   const p = loadProgress();
   const done = [p.saidYes, p.heartsWon, p.memoryWon].filter(Boolean).length;
 
-  // PERSONALIZA AQUÍ TU CARTA:
-  const letterText =
-`Hola mi amor, esta carta te escribo sabiendo todo lo que paso, todo lo malo que he hecho, que todo lo que me dijiste 
-ya lo tengo grabado, lo tengo en mi mente, asi como tu tienes lo que hice y no hice. Disculpa
+const letterText =
+    `Te escribo esta carta siendo consciente de todo lo que pasó, de todo lo que hice mal y de todo lo que me dijiste.
+     Cada palabra tuya se quedó grabada en mi mente, así como entiendo que también están grabadas en ti mis errores, 
+     lo que hice y lo que no hice. Perdóname.
 
-Tienes razon al decir que no pude cuidar de nuestra relacion, fue mi culpa despues de todo, disculpa por no ser capaz, 
-por ser insuficientemente bueno para cuidar de esto, lo siento porque te vi con esa mirada tan fria, si estuve esperando 
-este dia desde el primer dia que comence con mis cartas, cada QR, cada video, pense haciendolo en ti en que "ya no 
-importa si peleamos debemos salir adelante", pero no se que paso estos dias que solo se sentia tan mal, que lo que 
-hablaramos era simplemente pelear, yo me desanime, me senti triste, se que no soy el unico que se sintio asi y 
-almenos tu pudiste darte una mirada sincera de amor y emocion, yo no pude, disculpame. Cuando me di cuenta ya era tarde, 
-sabia que estarias llorando, que no podrias, que no soportarias, que aunque me digas que me amas, con todo lo que dijiste,
-lo siento pero es dificil de dirigir esas palabras, se que ya no deberia decirte "amor" en mi vida, se que no deberia de 
-contarte porque ya no te intereso, que prefieres salir y te da flojera ir conmigo. Yo lo entiendo y solo me duele, solo 
-se siente mal.
+    Tienes razón al decir que no supe cuidar nuestra relación como debía. Fue mi culpa después de todo, y me duele 
+    reconocer que no fui lo suficientemente bueno para proteger algo tan valioso para nosotros. Lo siento por cada 
+    momento en el que fallé, por cada instante en el que no estuve a la altura, y por haberte hecho sentir así. Esa 
+    mirada tuya tan fría me dolió, no por enojo, sino porque entendí que algo dentro de nosotros ya estaba muy herido.
 
-Solo escribo esta carta con el fin de decirte que te amo, que todo lo que dijiste si me llego fuerte y claro a mi cabeza, 
-pero aun asi yo la verdad desearia poder salir contigo. Me hubiera gustado salir contigo almenos un rato. O que me seas 
-directa "no saldremos", llorare, SI, pero no puedo hacer nada para contradecirte, ya no puedo, no me siento ni digno de 
-pedirte algo, no me siento ni con la cara para poder verte y decirte "no lo hagas". Gracias por darme tu amor, todo el 
-amor que pudiste, todo ese cariño. Lo aprecio tanto, gracias por las cartas por los regalos, por los abrazos, por los 
-besos, por los buenos dias, por los "te amo" por todo en realidad, GRACIAS POR TODO.
+    Desde el primer día que empecé con mis cartas, cada QR, cada detalle, todo lo hacía pensando en ti, creyendo que, 
+    aunque peleáramos, siempre saldríamos adelante. Pero estos días todo se volvió pesado, triste, como si cada 
+    conversación terminara en discusión. Yo me desanimé, me sentí mal, y sé que no fui el único que se sintió así. 
+    Tú tuviste la valentía de mirarte con sinceridad; yo, en cambio, me perdí en mis emociones y no supe reaccionar a 
+    tiempo. Cuando me di cuenta, ya era tarde.
 
-Espero hoy tengas un dia divertido con tu prima, que te distraigas, que la pases muy bonito con pato en las noches de 
-discord y te escuche, que tus amigos esten para ti, en tus mejores momentos.
+    Sé que estabas llorando, sé que estabas cansada, y sé que aunque digas que me amas, todo lo que pasó hace difícil 
+    sostener esas palabras sin que duelan. También entiendo que quizás ya no debería llamarte “amor” como antes, que 
+    tal vez ya no te interesa lo mismo que antes o que prefieres otros planes antes que estar conmigo. Y aunque lo 
+    entienda, no deja de doler. Duele mucho.
 
-Solo me arrepiento de no estar ahi para ti, ayer y hoy. 
+    Aun así, esta carta no es para reclamarte nada. Es solo para decirte que te amo. Que todo lo que me dijiste me llegó 
+    fuerte y claro, y que, pese a todo, yo sí hubiera querido salir contigo, aunque sea un momento. Me habría bastado 
+    verte, compartir un rato, sentir que aún podíamos hablar sin herirnos.
 
-Atte: Andree, Tu noviecito que te ama y no te olvida nunca`;
+    Gracias por todo el amor que me diste, por cada carta, cada regalo, cada abrazo, cada beso, cada “buenos días” y 
+    cada “te amo”. Gracias por cada momento bonito que compartimos. Lo valoro más de lo que imaginas.
 
+    Y quiero que sepas algo, con total sinceridad:
+    No importa lo que pase desde ahora, mis sentimientos por ti son reales y no cambian por el dolor ni por la distancia. 
+    Te amo de verdad. Y aunque hoy me sienta arrepentido y triste, también estoy decidido a ser mejor, más firme y más 
+    consciente de mis acciones.
+
+    No sé qué traerá el futuro, pero sí sé que este amor no fue un juego para mí. Pase lo que pase, siempre te voy a 
+    amar con respeto, con gratitud y con la madurez que estoy aprendiendo a tener. Y si algún día me toca demostrarlo 
+    en silencio, también lo haré.
+
+    Atte:
+    Andree, quien te ama sinceramente y no te olvida.`;
   let timer = null;
 
   function play(){
@@ -524,3 +533,4 @@ function initQrPage(){
   // Chequeo inicial por si recargan
   check();
 }
+
