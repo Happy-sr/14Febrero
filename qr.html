@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="qr">
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">♥ Nosotros</a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="carta.html">Carta</a>
+      <a href="qr.html" class="active">QR</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Escanéame</h1>
+      <p class="muted">Este es el QR principal.</p>
+
+      <div class="qrGrid">
+        <div class="qrCard">
+          <h2>QR principal</h2>
+          <img class="qrImg" src="src/qr.png" alt="Código QR principal" />
+        </div>
+
+        <div class="qrCard">
+          <h2>¿Tienes el código?</h2>
+          <p class="muted">Escribe la coordenada exacta para desbloquear el otro QR.</p>
+
+          <label class="label" for="secretInput">Código</label>
+          <input
+            class="input"
+            id="secretInput"
+            type="text"
+            placeholder='Ej: -123.123... , -123.123...'
+            autocomplete="off"
+            spellcheck="false"
+          />
+
+          <div class="status" id="qrStatus" aria-live="polite"></div>
+
+          <div id="secretBox" class="secretBox" hidden>
+            <h2>QR secreto</h2>
+            <img class="qrImg" src="src/qr-secreto.png" alt="Código QR secreto" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

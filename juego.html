@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini juegos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="games">
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">♥ Nosotros</a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="juego.html" class="active">Juegos</a>
+      <a href="carta.html">Carta</a>
+      <a href="qr.html">QR</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Mini juegos</h1>
+      <p class="muted">Completa todo para desbloquear la carta (igual puedes entrar, pero aquí se pone más bonito).</p>
+      <div class="progress" role="status" aria-live="polite">
+        <span id="progressText">Progreso: 0/3</span>
+        <div class="bar"><div class="barFill" id="barFill"></div></div>
+      </div>
+    </section>
+
+    <!-- Juego 1 -->
+    <section class="card game">
+      <h2>1) Pregunta seria</h2>
+      <p class="lead">¿Me amas?</p>
+
+      <div class="playground" id="lovePlayground">
+        <button class="btn primary big" id="btnSi" type="button">Sí</button>
+        <button class="btn danger big" id="btnNo" type="button">No</button>
+      </div>
+
+      <div class="status" id="loveStatus" aria-live="polite"></div>
+    </section>
+
+    <!-- Juego 2 -->
+    <section class="card game">
+      <h2>2) Atrapa corazones</h2>
+      <p class="muted">Haz clic en 10 corazones para ganar.</p>
+
+      <div class="arena" id="heartArena" aria-label="Zona de juego atrapa corazones"></div>
+
+      <div class="row">
+        <div class="pill">Puntos: <span id="heartScore">0</span>/10</div>
+        <button class="btn" id="startHearts" type="button">Iniciar</button>
+      </div>
+      <div class="status" id="heartStatus" aria-live="polite"></div>
+    </section>
+
+    <!-- Juego 3 -->
+    <section class="card game">
+      <h2>3) Memoria de parejas</h2>
+      <p class="muted">Encuentra todas las parejas.</p>
+
+      <div class="memory" id="memoryGrid" aria-label="Juego de memoria"></div>
+
+      <div class="row">
+        <button class="btn" id="restartMemory" type="button">Reiniciar memoria</button>
+        <div class="pill">Aciertos: <span id="matches">0</span></div>
+      </div>
+      <div class="status" id="memoryStatus" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+      <h2>Desbloqueo</h2>
+      <p class="muted" id="unlockText">Completa los 3 para ver el botón final.</p>
+      <a class="btn primary full" id="goLetter" href="./carta.html" hidden>Ir a la carta ♥</a>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

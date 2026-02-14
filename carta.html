@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tu carta</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="letter">
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">♥ Nosotros</a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="juego.html">Juegos</a>
+      <a href="carta.html" class="active">Carta</a>
+      <a href="qr.html">QR</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card letter">
+      <p class="kicker">Para ti</p>
+      <h1>Mi amor,</h1>
+
+      <div class="paper" id="paper">
+        <p id="typed"></p>
+      </div>
+
+      <div class="row">
+        <button class="btn primary" id="replayType" type="button">Releer</button>
+        <button class="btn" id="printBtn" type="button">Imprimir</button>
+      </div>
+
+      <div class="status" id="letterStatus" aria-live="polite"></div>
+    </section>
+
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
